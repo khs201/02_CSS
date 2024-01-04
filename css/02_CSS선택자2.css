@@ -36,3 +36,20 @@
         /* name 속성 값이 "name-1" 인 요소 모두 찾기 */
         [name="name-1"] {font-size: 30px;}
         
+
+
+        /* -------- 자식 선택자 (>) --------- */
+        
+        #parent1 {background-color: skyblue;}
+        #parent1 > li{background-color: gold;}
+        
+        /* !!선택자를 연이어 작성할 수 있다!! */
+        /* 자식2, 자식4 의 글자색을 red */
+        #parent1 > li > span {color: red;}
+
+        /* ------ 후손 선택자 ( ) ------ */
+
+        /* 아이디가 parent2인 요소의 후손 중 모든 p 태그 선택 */
+        #parent2 p {background-color: lightcoral;}
+
+        #parent2 div p {color: blue;}
