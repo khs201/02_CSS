@@ -53,3 +53,75 @@
         #parent2 p {background-color: lightcoral;}
 
         #parent2 div p {color: blue;}
+
+        /* 반응 선택자 */
+        .test-div{
+            /* 3px 실선 검정색 */
+            border: 3px solid black;
+
+            width: 200px;
+            height: 200px;
+            /* 배경색 #ddd (16진수) */
+            background-color: #ddd;
+            
+            /* 아랫쪽 요소와 30px 만큼 간격 추가 */
+            margin-bottom: 30px;
+
+            /* 마우스 커서를 손가락 모양으로 변경 */
+            cursor: pointer;
+        }
+        /* #activeBox가 클릭되고 있을 때 */
+        #activeBox:active{
+            background-color: yellow;
+        }
+
+        /* #hoverBox에 마우스가 올라왔을 때 */
+        #hoverBox:hover{
+
+            /* 배경 이미지 */
+            background-image: url('../images/cats/cat5.jpg');
+
+            /* 배경 이미지 크기 */
+            background-size: cover;
+        }
+
+        /* ----- 상태 선택자 ------ */
+
+        /* :focus */
+        #input1:focus {
+
+            /* 요소의 기본 테두리 */
+            border-color: red;
+
+            /* 초점이 맞춰졌을 때 요소 바깥에 생기는 선 */
+            outline-color: greenyellow;
+        }
+
+        #input1{
+            border-color: red;
+        }
+
+        /* :checked */
+        #input2:checked{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            /* radio, checkbox 선택시 보이는 표시는
+            배경이 아니라 이미지이기 때문에 배경색이 적용되지 않는다! */
+        }
+
+        /* :enabled / :disabled */
+        .input3:enabled{ background-color: skyblue;}
+        .input3:disabled{ background-color: lightcoral;}
+
+        /* ---- 동위 선택자 ---- */
+
+        /* + : 바로 뒤 형제 요소 하나 */
+        #div1 + div{
+            background-color: yellow;
+        }
+    
+        /* ~ : 뒤에 존재하는 형제 요소 중 일치하는 요소 모두 선택 */
+        #div3 ~ div{
+            background-color: springgreen;
+        }
