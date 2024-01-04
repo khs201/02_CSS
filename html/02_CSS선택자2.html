@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_CSS선택자2</title>
+
+    <!-- link 태그 : 외부 CSS 파일과 연결하는 태그 -->
+    <!-- rel(relationship) : 연결하려는 파일이 어떤 종류의 파일인가? 
+                                       (현재 HTML과 무슨 관계인가?)
+        
+         href : 참조하려는 파일의 위치(주소, 경로)
+                                   
+         .. : 상위 폴더로 이동
+         
+        -->
+
+         
+    <link rel="stylesheet" href="../css/02_CSS선택자2.css">
+
+    <!-- 
+        * 외부에 .css 파일을 만들어 연결 *
+        왜?
+        1) HTML 코드가 너무 길어지니까
+        2) 작성한 CSS 코드를 다른 HTML 파일과 공유할 수 있다
+     -->
+</head>
+<body>
+    <h1>기본 속성 선택자</h1>
+    
+    <pre>
+    - 태그에 작성된 특정 속성을 이용해 선택하는 선택자
+
+        <strong>작성법</strong>
+        <code>
+            선택자[속성명="속성값"] { CSS 코드; }
+        </code>
+    </pre>
+
+    <h4>name 속성 선택하기(name은 html에 기본적으로 존재하는 속성)</h4>
+    <!-- div*4[name=name-]{div$} -->
+    <div name="name-1">div1</div>
+    <div name="name-1">div2</div>
+    <div name="name-2">div3</div>
+    <div name="name-2">div4</div>
+  
+    <h4>data 속성 선택하기(data는 html의 기본속성이 아님)</h4>
+    <!-- p*4[data=data-]{p$} -->
+    <p data="data-1">p1</p>
+    <p data="data-1" name="name-1">p2</p>
+    <p data="data-2" name="name-1">p3</p>
+    <p data="data-2">p4</p>
+
+</body>
+</html>
