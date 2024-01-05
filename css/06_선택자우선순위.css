@@ -1,0 +1,30 @@
+/* 1순위:  !important */
+
+/* 2순위 : inline-style(html에 직접 작성) 속성 */
+
+/* 3순위 : 아이디 선택자 */
+#test1 {
+    color: white;
+    /* 안 겹치면 모두 누적된다 */
+    height: 100px;
+    background-color: black;
+}
+
+/* 4순위 : 클래스 선택자 */
+.cls1 { 
+    background-color: green !important; /* 1순위 : !important */ 
+}
+
+/* 5순위 : 태그 선택자 */
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red !important;
+}
+
+/* 같은 !important 일시 선택자 순위로 정해짐 */
+/* 선택자 순위도 같을 경우 아래에 써진게 우선 */
+
+.cls1{
+    background-color: blue !important;
+}
