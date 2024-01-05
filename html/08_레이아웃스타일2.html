@@ -95,10 +95,10 @@
     </pre>
 
     <div class="box" id="test1">content</div>
-<hr>
-<h1>padding, margin, border-width 크기 한 번에 지정하기</h1>
+    <hr>
+    <h1>padding, margin, border-width 크기 한 번에 지정하기</h1>
 
-<pre>
+    <pre>
     padding | margin | border-width : 속성 값(크기)
 
     속성 값 1개 : 상하좌우
@@ -107,17 +107,28 @@
     송성 값 4개 : 상 우 하 좌 (상 기준 시계방향)
 </pre>
 
-<!-- div.box#test2{content} -->
-<div class="box" id="test2">content</div>
+    <!-- div.box#test2{content} -->
+    <div class="box" id="test2">content</div>
 
-<hr>
+    <hr>
 
-<h2>margin : auto; </h2>
+    <h2>margin : auto; </h2>
 
-<pre>
+    <pre>
     다른 요소와의 간격을 자동으로 지정하여
     가운데 정렬하게 만드는 속성값
+
+    - 기본적으로(보통) 좌우 간격만 자동으로 지정
+
+    -지정되는 대상은 block 형식의 요소여야 한다
+    (inline, inline-block은 text-align : center; 이용)
+    (text-align == 글자 정렬)
+    
 </pre>
+
+    <div class="container">
+        <div class="box" id="test3">auto 테스트</div>
+    </div>
 </body>
 
 </html>

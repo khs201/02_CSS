@@ -119,6 +119,10 @@
     background-color: green;
 }
 
+.bg-black {
+    background-color: black;
+}
+
 .h-20 {
     height: 20%
 }
@@ -133,27 +137,27 @@
 
 /* 좌우 2분할 */
 
-#test4>div{
+#test4>div {
     width: 50%;
     height: 100%;
     display: inline-block;
 }
 
-#test4>div:first-child{
+#test4>div:first-child {
     background-color: red;
 }
 
-#test4>div:last-child{
+#test4>div:last-child {
     background-color: blue;
 }
 
 /* 田 만들기 */
 
 #jun1 {
- height: 50%;
- width: 50%;
- background-color: red;
- display: inline-block;
+    height: 50%;
+    width: 50%;
+    background-color: red;
+    display: inline-block;
 }
 
 #jun2 {
@@ -165,7 +169,7 @@
 
 #jun3 {
     height: 50%;
-    width:50%;
+    width: 50%;
     background-color: yellow;
     display: inline-block;
 }
@@ -179,12 +183,12 @@
 
 /* 田 만들기 2 */
 
-.row{
+.row {
     width: 100%;
     height: 50%;
 }
 
-.col{
+.col {
     width: 50%;
     height: 100%;
     display: inline-block;
@@ -192,20 +196,29 @@
 
 /* 방법2 */
 
-#test5{
+#test5 {
     /* inline, inline-block, 글들 사이의 높이 간격 0 */
     line-height: 0;
-  }
-  
-  #test5 > div{
+}
+
+#test5>div {
     width: 50%;
     height: 50%;
     display: inline-block;
-  }
-  
-  #test5 > div:nth-child(1){ background-color: pink;}
-  #test5 > div:nth-child(2){ background-color: yellow;}
-  #test5 > div:nth-child(3){ background-color: yellowgreen;}
-  #test5 > div:nth-child(4){ background-color: skyblue;}
-  
-  
+}
+
+#test5>div:nth-child(1) {
+    background-color: pink;
+}
+
+#test5>div:nth-child(2) {
+    background-color: yellow;
+}
+
+#test5>div:nth-child(3) {
+    background-color: yellowgreen;
+}
+
+#test5>div:nth-child(4) {
+    background-color: skyblue;
+}

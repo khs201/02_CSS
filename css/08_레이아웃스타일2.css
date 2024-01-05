@@ -78,3 +78,17 @@
 }
 
 #test2{ border : 1px solid black; }
+
+/* margin : auto 테스트 */
+.container{
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    box-sizing: content-box;
+}
+
+#test3{
+    margin: auto;
+    margin-top: 200px;
+
+}
