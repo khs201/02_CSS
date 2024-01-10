@@ -13,7 +13,7 @@
 }
 
 a {
-    color: gray;
+    color: green;
     text-decoration: none;
 }
 
@@ -42,11 +42,23 @@ body {
     font-style: normal;
 }
 
+img:not(.logo, .fb, .twit) {
+    border: 3px solid black;
+    transition-duration: 0.25s;
+}
+
+img:not(.logo, .fb, .twit):hover {
+    transform: scale(1.1)
+}
+
+p {
+    white-space: pre-wrap;
+}
 
 /* ------------- 헤더 ------------- */
 .title {
     display: block;
-    height: 150px;
+    height: 90px;
     z-index: 1000;
     top: -1px;
     position: sticky;
@@ -60,7 +72,6 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: rgb(235, 102, 102);
-    border-bottom: 2px solid black;
 
 
 }
@@ -88,7 +99,7 @@ header {
 
 .header-container-bottom {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 100%;
 }
 
@@ -100,24 +111,27 @@ header {
     align-items: center;
     font-family: 'Pretendard-Regular';
     object-fit: contain;
+    font-style: italic;
+    text-decoration: underline;
 
 }
 
 .header-container-bottom-col2 {
     display: flex;
-    justify-content: flex-start;
-    height: 75%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
     left: 20;
+    flex-grow: 2;
 }
 
 .header-container-bottom-col3 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.header-container-bottom-col3:hover {
-    cursor: pointer;
+    flex-grow: 1;
+    width: 10%;
 }
 
 
@@ -137,6 +151,7 @@ header {
 }
 
 .navbar>li {
+    background-color: chocolate;
     display: flex;
     justify-content: space-around;
     width: 15%;
@@ -250,6 +265,7 @@ footer {
     height: 300px;
     margin: 0;
     width: 100%;
+    padding: 25px;
 }
 
 .footer-row1 {
@@ -257,13 +273,15 @@ footer {
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    background-color: grey;
 
 }
 
 .footer-col1 {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 25%;
+    text-align: center;
 
 }
 
@@ -295,7 +313,11 @@ footer {
     justify-content: center;
     margin-top: 30px;
     background-color: steelblue;
-    
+
+}
+
+.footer-row2>p {
+    text-align: center;
 }
 
 .end-text {

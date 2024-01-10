@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.item {
+    /* flex-basis: 500px; */
+    /* width: 100px; */
+    /* flex-grow: 1; */
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    
+}
+/* 
+.item:not(:last-child) {
+    border-right: 1px solid black;
+} */
+
+/* .item1>img {
+    width: 25%;
+    object-fit: cover;
+} */
+
+/* .item2 {
+    flex-grow: 1;
+    text-align: center;
+    flex-shrink: 1;
+} */
+
+/* .item3 {
+    flex-grow: 1;
+    text-align: center;
+    flex-shrink: 1;
+} */
+
+img {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+}
