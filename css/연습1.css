@@ -37,7 +37,7 @@
     flex-shrink: 1;
 } */
 
-img {
+.item>img {
     object-fit: contain;
     height: auto;
     width: 100%;
